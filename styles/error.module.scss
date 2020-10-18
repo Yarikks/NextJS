@@ -1,0 +1,14 @@
+$mainColor: #3262ed;
+
+.error_centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100wh;
+}
+
+.error_color {
+    color: $mainColor;
+}

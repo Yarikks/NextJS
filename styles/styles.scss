@@ -1,0 +1,64 @@
+$mainColor: #3262ed;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn_mainColor {
+  border: 1px solid $mainColor;
+  color: $mainColor
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading img {
+  width: 50%;
+  height: 50%;
+}
+
+.custom-card-deck {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+  .card {
+    flex-basis: calc(25% - 2 * 10px);
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px - 0.01) {
+  .card {
+    flex-basis: calc(33% - 2 * 10px);
+  }
+}
+ 
+@media screen and (min-width: 500px) and (max-width: 700px - 0.01) {
+  .card {
+    flex-basis: calc(50% - 2 * 10px);
+  }
+}
+ 
+@media screen and (max-width: 500px - 0.01) {
+  .card {
+    flex-basis: calc(100% - 2 * 10px);
+  }
+}
